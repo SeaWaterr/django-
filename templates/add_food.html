@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action = "/goods/add_food/" method = "post">
+	<h1>增加</h1>
+	<p>名称<input type="text" name = "name"></p>
+	<p>价格<input type="text" name="price"></p>
+	<p>生产日期<input type="text" name="date"></p>
+    <p>生产厂家<input type="text" name="production"></p>
+    <p>ID<input type="text" name="id"></p>
+    <input type="submit" value="添加食品">
+    </form>
+    <form action = "/goods/add_food/" method = "post">
+        <select name = 'asss'>
+        <option value = '1'>吃粉</option>
+        <option value = '0'>吃面</option>
+
+        {% for x in production %}
+        {% endfor %}
+        <input type="submit" value="添加食品">
+        </select>
+    </form>>
+</body>
+</html>

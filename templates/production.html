@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>production</title>
+</head>
+<body>
+    <form action = "/goods/add_production/" method = "post">
+	<h1>厂家</h1>
+	<p>name<input type="text" name = "name"></p>
+	<p>addr<input type="text" name="addr"></p>
+	<p>boss<input type="text" name="boss"></p>
+    <p>id<input type="text" name="id"></p>
+    <input type="submit" value="添加生产厂家">
+    </form>
+    <br>
+    <br>
+    <br>
+    </form>
+    <form action = "/goods/delete_production/" method = "post">
+        <select name = 'production_name'>
+            {% for x in production %}
+                <option value = {{x.name}}>{{x.name}}</option>
+            {% endfor %}
+        <input type="submit" value="删除生产厂家">
+        </select>
+    </form>
+</body>
+</html>
